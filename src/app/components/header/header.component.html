@@ -1,0 +1,11 @@
+  <mat-toolbar class="header">
+    <div>
+      <span>{{_headerservice.title | async}}</span> 
+      <span *ngIf="_headerservice.jobsCount">({{_headerservice.jobsCount}})</span>
+    </div>
+
+    <button mat-icon-button  routerLink="/">
+      <mat-icon>home</mat-icon>
+    </button>
+
+  </mat-toolbar>

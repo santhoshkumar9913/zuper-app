@@ -1,0 +1,16 @@
+<div class="dashboard">
+  <mat-card class="mat-elevation-z12">
+    <mat-card-header>
+      <mat-card-title>Job Status</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="job-statics">
+        <div class="jobs" *ngFor="let item of count_by_job_status | keyvalue" (click)="onJobsclick(item.key)"
+          [routerLink]="['/jobs']">
+          <div class="title">{{item.key}}</div>
+          <div class="value">{{item.value}}</div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

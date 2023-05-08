@@ -1,0 +1,18 @@
+.job-details {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 320px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    margin-top: 10px;
+  }
+}
